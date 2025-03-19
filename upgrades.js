@@ -29,7 +29,7 @@ const upgrades = [
         id: 'clickPower',
         name: 'Boost Click Power',
         description: 'Increases energy gained from each click',
-        baseCost: 5,
+        baseCost: 10,
         costMultiplier: 1.4,
         maxLevel: 10,
         category: 'click',
@@ -41,7 +41,7 @@ const upgrades = [
         id: 'clickMultiplier',
         name: 'Click Multiplier',
         description: 'Multiplies energy gained from clicks',
-        baseCost: 10,
+        baseCost: 20,
         costMultiplier: 2,
         maxLevel: 5,
         category: 'click',
@@ -99,7 +99,7 @@ const upgrades = [
         id: 'magnetCount',
         name: 'Additional Magnets',
         description: 'Adds more magnets around the accelerator, increasing the chance of speed boosts',
-        baseCost: 15,
+        baseCost: 20,
         costMultiplier: 1.6,
         maxLevel: 12, // Up to 16 magnets (4 base + 12 upgrades)
         category: 'structure',
@@ -135,7 +135,7 @@ const upgrades = [
         id: 'acceleratorEfficiency',
         name: 'Enhance Efficiency',
         description: 'Improves energy production from collisions',
-        baseCost: 5,
+        baseCost: 10,
         costMultiplier: 2,
         maxLevel: 10,
         category: 'structure',
@@ -229,18 +229,7 @@ const upgrades = [
             return level;
         }
     },
-    {
-        id: 'maxParticles',
-        name: 'Increase Max Particles',
-        description: 'Allows more particles in the accelerator at once',
-        baseCost: 20,
-        costMultiplier: 1.8,
-        maxLevel: 5,
-        category: 'particle',
-        action: function() {
-            game.maxParticles += 5;
-        }
-    },
+    // maxParticles upgrade has been removed as requested
     {
         id: 'unlockPositron',
         name: 'Unlock Positrons',

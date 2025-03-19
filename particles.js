@@ -312,8 +312,8 @@ function updateParticles() {
             
             // Only boost once every 500ms when passing by a magnet
             if (timeSinceLastBoost > 500) {
-                // Boost the particle based on magnet power
-                const boostMultiplier = 1 + (game.magnetPower * 0.2); // 20% boost per magnet power level
+                // Boost the particle based on magnet power - IMPROVED to double speed at minimum
+                const boostMultiplier = 2 + (game.magnetPower * 0.5); // At least double speed, with 50% more per level
                 
                 // Speed boost from passing by a magnet
                 if (!particle.nearMagnet) {

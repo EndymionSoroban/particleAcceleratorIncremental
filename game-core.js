@@ -152,7 +152,7 @@ const INITIAL_STATE = {
     particleSpeed: 1,
     autoCollider: 0,
     collisionChance: 0.05,
-    magnetCount: 1,
+    magnetCount: 4,
     magnetPower: 1,
     particleStability: 1,
     particleDetectors: 0,
