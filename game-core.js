@@ -91,7 +91,7 @@ const game = {
     // Particle spawn rate
     particleSpawnRate: 3, // seconds between spawns
     lastSpawnTime: 0,
-    maxParticles: 10, // Maximum particles allowed at once
+    maxParticles: 20, // Maximum particles allowed at once
     
     // Achievements
     achievements: {
@@ -159,7 +159,7 @@ const INITIAL_STATE = {
     energyRecycling: 0,
     researchAssistants: 0,
     particleSpawnRate: 3,
-    maxParticles: 10,
+    maxParticles: 20,
     acceleratorShape: 'circle'
 };
 
