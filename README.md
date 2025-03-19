@@ -1,6 +1,7 @@
 # Particle Accelerator Incremental
 
 An engaging incremental game where you run your own particle accelerator, generate collisions, and discover fundamental particles!
+
 https://endymionsoroban.github.io/particleAcceleratorIncremental/
 
 ## About the Game
