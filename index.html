@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particle Accelerator Incremental</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-area">
+            <canvas id="acceleratorCanvas"></canvas>
+        </div>
+        <div class="upgrade-panel">
+            <div class="stats">
+                <div class="energy">Energy: <span id="energyValue">0</span></div>
+                <div class="collisions">Collisions: <span id="collisionsValue">0</span></div>
+                <div class="collisions-per-second">Per second: <span id="cpsValue">0.0</span></div>
+                <div class="particles-info">
+                    <span>Active Particles: <span id="particleCount">0</span></span>
+                    <span>Size: <span id="particleSize">1</span>x</span>
+                    <span>Speed: <span id="particleSpeed">1</span>x</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="energyProgress"></div>
+                </div>
+                <!-- Click power stats will be added here dynamically -->
+                <!-- Particle stats will be added here dynamically -->
+            </div>
+            <div id="upgradesList">
+                <!-- Upgrades will be dynamically generated here -->
+            </div>
+            <div class="achievements">
+                <div class="achievement" data-description="First Collision" id="achievement1"></div>
+                <div class="achievement" data-description="100 Collisions" id="achievement2"></div>
+                <div class="achievement" data-description="1000 Collisions" id="achievement3"></div>
+                <div class="achievement" data-description="Max Accelerator Size" id="achievement4"></div>
+                <div class="achievement" data-description="10 Particles" id="achievement5"></div>
+            </div>
+            <button class="reset-btn" id="resetBtn">Reset Progress</button>
+        </div>
+    </div>
+
+    <!-- Load scripts in the correct order to resolve dependencies -->
+    <script src="utilities.js"></script>
+	<script src="particles.js"></script>
+	<script src="game-core.js"></script>
+	<script src="upgrades.js"></script>
+	<script src="achievements.js"></script>
+	<script src="rendering.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
